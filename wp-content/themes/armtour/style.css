@@ -1,0 +1,464 @@
+/*
+Theme Name: ArmTour
+Author: Tigran Martirosyan
+Description: This is my first theme
+Version: 1
+*/
+
+body,html {
+	padding: 0;
+	margin: 0;
+  font-family: sans-serif;
+  background: url('http://cdn.tumo.org/activity/web/phase-2/using-css-style-html-elements/exercise/bg/35.png') #000 top center;
+}
+header {
+  background: url('https://cdn.cnn.com/cnnnext/dam/assets/180219103333-zanzibar-and-its-islands---pemba-manta-bay-underwater-room.jpg');
+  filter: grayscale(0.1);
+  padding-bottom: 80px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+header, header a {
+	color: white;
+}
+a { text-decoration: none; }
+.header-forms, 
+.front-posts,
+.middle-content-header {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin: auto;
+}
+.middle-content-header ul,
+.ul-first-about ul {
+	list-style-type: none;
+	display: flex;	
+	padding: 0;
+}
+.name h3 { margin: 0; font-size: 30px; }
+.name a { display: flex; align-items: center; }
+.logo-header { width: 120px; height: 110px; }
+.middle-content-header li,
+.ul-first-about li {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.ul-first-about li i {
+	margin-right: 15px;
+}
+.search-form {
+	margin: 0 20px;
+  display: flex;
+  align-items: center;
+}
+.search-form form input[type=text],
+.sidebar-content form input[type=text] {
+  padding: 2px;
+  background-color: rgba(32,32,32,0.5);
+  border: 0;
+  color: white;
+  font-size: 19px;
+  font-weight: 100;
+}
+.search-form form input[type=submit],
+.sidebar-content form input[type=submit] {
+  background-color: rgba(32,32,32,0.5);
+  border: 0;
+  color: white;
+  padding: 5px;
+  padding-bottom: 3px;
+  font-size: 16px;
+}
+.ul-second-with_widget {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-flow: row-reverse;
+}
+header hr { width: 80%;margin: auto; }
+.center-welcome {
+	text-align: center;
+	margin-top: 70px;
+  font-family: "Times New Roman", Times, serif;
+}
+.font-big {
+	font-size: 50px;
+}
+.font-middle {
+	font-size: 30px;
+}
+.cont-last-posts {
+  margin: 25px;
+}
+.container-image-post-header {
+  position: relative;
+  max-width: 500px;
+}
+.container-image-post-header img {
+  display: block;
+  width: 100%;
+  /*height: 500px !important;*/
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.container-image-post-header:hover .overlay {
+  opacity: 1;
+}
+.text-title {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.front-posts {
+	padding-top: 40px;
+}
+.no_display {
+  display: none;
+}
+/* footer */
+.footer-first-div-mail {
+  width: 100%;
+  background-color: #303030;  
+}
+.container-footer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+footer ul {
+  list-style-type: none;
+}
+.with-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.with-form img {
+  margin-right: 25px;
+}
+.footer-first-div-mail {
+  padding: 20px 0;
+}
+.with-form form input[type=email] {
+  background-color: #202020;
+  padding: 12px;
+  width: 220px;
+  color: white;
+  font-size: 20px;
+  border: 0;
+}
+.with-form form input[type=email]:focus {
+  outline: none;
+}
+.with-form form input[type=submit] {
+  background-color: #202020;
+  color: white;
+  padding: 12px;
+  font-size: 20px;
+  widows: 160px;
+  border: 0;
+  transition: 0.5s ease-in;
+}
+.with-form form input[type=submit]:hover {
+  background-color: white;
+  color: black;
+}
+.parent-general-footer-content {
+  background-color: #202020;
+}
+.container-footer-second {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.logo-about {
+  width: 60%;
+}
+header,header a,footer,footer a {
+  color: white;
+}
+.second-menu-in-footer {
+  width: 30%;
+  text-align: center;
+}
+.second-menu-in-footer li,.second-menu-in-footer li a{
+  padding: 10px 20px;
+}
+.copyright {
+  text-align: center;
+}
+.social-links ul {
+  display: flex;
+  justify-content: space-around;
+}
+.social-links ul li a{
+  padding: 10px 30px;  
+}
+footer a {transition: 0.5s;}
+.menu-top-container a:hover, .social-links a:hover {
+  background-color: white;
+  color: black;
+}
+.flex-container-posts {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  align-items: center;
+  margin: 50px auto;
+}
+.flex-container-posts:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.excerpt-posts {
+  width: 500px;
+}
+.menu a{
+  padding: 10px;
+  transition: .5s;
+}
+.b-search-query {
+  color: #0b89b2;
+}
+.content-box-search {
+  width: 60%;
+  margin: auto;
+}
+.content-box-search article {
+  margin: 30px 0;
+  border: 1px dotted #0b89b2;
+  padding: 30px 20px;
+}
+.post-article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content-all {
+  width: 700px;
+}
+.first-content-thumbnail {
+  width: 500px;
+}
+.first-content-thumbnail img {
+  max-width: 300px;
+  max-height: 300px;
+}
+.post-info, .post-info a {
+  color: #878c82;
+  transition: .3s;
+}
+.post-info a { text-decoration: underline; }
+.post-info a:hover { color: green; }
+.content-all h2 a { color: #0b89b2; }
+
+/*  CONTACT PAGE  */
+
+.contact {
+  width: 80%;
+  margin:auto;
+}
+.contact p:nth-child(2) { width: 300px; }
+.contact form input[type=text],
+.contact form input[type=email],
+.contact form textarea {
+  padding: 2px;
+  background-color: rgba(32,32,32,0.5);
+  border: 0;
+  color: white;
+  font-size: 19px;
+  font-weight: 100;
+  width: 300px;
+  cursor: default;
+}
+.contact form input:focus,
+.contact form textarea {
+  outline: none;
+}
+.contact form input[type=submit] {
+  background-color: rgba(32,32,32,0.5);
+  border: 0;
+  color: white;
+  padding: 10px 20px;
+  transition: .3s;
+}
+.contact form input[type=submit]:hover {
+  background-color: white;
+  color: black;
+}
+.contact-first-div {
+  width: 500px;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*    ABOUT PAGE    */
+
+.about {
+  width: 70%;
+  margin: auto; /*http://seesight-tours.com/wp-content/uploads/2016/02/about-title-bg.jpg*/
+}
+.title-about {
+  background: url('http://seesight-tours.com/wp-content/uploads/2016/02/about-title-bg.jpg');
+  width: 100% !important;
+  background-size: cover;
+  background-position: center center;
+  padding: 50px 0;
+  margin-top: 40px;
+}
+.title-about h2:first-child {
+  color: white !important;
+  font-weight: 100;
+  font-size: 65px;
+  text-align: center;
+}
+.title-about h2:last-child {
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.about {
+  overflow: hidden;
+}
+.about p:nth-child(2) {
+  text-align: center !important;
+  width: 100%;
+}
+.about h2 {
+  color: #0b89b2;
+}
+.row-flex-about {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+  align-items: center;
+}
+.row-flex-about * {
+  margin: 0 25px;
+}
+.row-flex-about:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.sidebar-content form input[type=text] {
+  width: 200px;
+}
+.main-column {
+  width: 60%;
+}
+.sidebar-content form input[type=submit] { transition: .3s; }
+.sidebar-content form input[type=submit]:hover {
+  background-color: white;
+  color: black;
+}
+.clearfix {
+  display: flex;
+  justify-content: space-around;
+}
+/*.calendar_wrap { margin: auto; width: 60%; }*/
+.sidebar {
+  text-align: center;
+}
+.sidebar-content { margin: 40px 0; }
+.flex-gallery-div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 40px auto;
+}
+.flex-gallery-div img {
+  width: 300px !important;
+  margin: 25px;
+}
+.post-aside {
+  background-color: rgba(32,32,32,0.8);
+  color: white;
+  padding: 30px 15px;  
+}
+.post-gallery {
+  background-color: rgba(45,45,45,0.7);
+  color: white;
+  padding: 45px 25px;
+}
+.post-gallery .gallery-item {
+  margin: 25px;
+}
+.sidebar-content:nth-child(3) {
+  text-align: left;
+}
+#wp-calendar td {
+  padding: 5px !important;
+}
+#wp-calendar thead {
+  margin: 15px 0 !important;
+}
+.image-single {
+  width: 60%;
+  margin: 45px auto;
+}
+.image-single a {
+  color: #0b89b2;
+}
+.ul-flex-lasts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.post-aside {
+  margin: 40px 0;
+}
+.videos p {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+.videos p iframe {
+  margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
